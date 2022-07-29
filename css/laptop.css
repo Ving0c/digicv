@@ -31,8 +31,7 @@ FONT SIZE SYSTEM (px)
 header {
   height: 50vh;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url("resume/images/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("resume/images/banner.jpg");
   background-size: cover;
 }
 
