@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/font.css" />
+    <title>Digital-CV</title>
+    <style>
+      /* Layout */
+      /* .body {
+        height: 100vh;
+      } */
+
+      .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 15px;
+        padding: 20px;
+        background-color: blue;
+      }
+
+      #timeline {
+        grid-area: 1 / 3 / 3 / 4;
+      }
+
+      .col {
+        background-color: #edf2ff;
+      }
+
+      h4 {
+        color: blue;
+        border-bottom: 1.5px solid #ced4da;
+      }
+
+      .goal-item {
+        border-bottom: 1px solid #ced4da;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      .fa-stack-2x {
+        color: #9775fa;
+      }
+
+      .fa-stack-1x {
+        color: #fff;
+      }
+
+      /* @media (max-width: 768px) {
+        .container {
+          display: flex;
+        }
+      } */
+
+      @media (max-width: 992px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+          gap: 0;
+        }
+        #scopes {
+          order: 2;
+        }
+        #team {
+          order: 3;
+        }
+        #primary {
+          order: 4;
+        }
+        #timeline {
+          order: 5;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .scopes-details {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col p-3" id="goals">
+        <h4 class="pb-3">Goals</h4>
+        <div class="goal-item d-flex">
+          <i class="icon-flag-checkered px-4 my-2"></i>
+          <div>
+            <h6 class="my-2">Goal 1</h6>
+            <p>Thiết kế layout trang CV cá nhân theo mẫu</p>
+          </div>
+        </div>
+        <div class="goal-item d-flex">
+          <i class="icon-flag-checkered px-4 my-2"></i>
+          <div>
+            <h6 class="my-2">Goal 2</h6>
+            <p>
+              Ứng dụng Bootstrap 5.0 và media query để tạo Responsive cho
+              Website
+            </p>
+          </div>
+        </div>
+        <div class="goal-item d-flex">
+          <i class="icon-flag-checkered px-4 my-2"></i>
+          <div>
+            <h6 class="my-2">Goal 3</h6>
+            <p>Hoàn thiện đưa trang Web lên mạng bằng Github Page</p>
+          </div>
+        </div>
+      </div>
+      <div class="col p-3" id="team">
+        <h4 class="pb-3">Team</h4>
+        <div class="team-item d-flex my-1">
+          <i class="icon-user px-2"></i>
+          <div>
+            <h6>Member 01</h6>
+            <p>Name: Lưu Thế Vinh</p>
+          </div>
+        </div>
+        <div class="team-item d-flex my-1">
+          <i class="icon-user px-2"></i>
+          <div>
+            <h6>Member 02</h6>
+            <p>Name:...</p>
+          </div>
+        </div>
+        <div class="team-item d-flex my-1">
+          <i class="icon-user px-2"></i>
+          <div>
+            <h6>Member 03</h6>
+            <p>Name:...</p>
+          </div>
+        </div>
+        <div class="team-item d-flex my-1">
+          <i class="icon-user px-2"></i>
+          <div>
+            <h6>Member 04</h6>
+            <p>Name:...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col p-3" id="timeline">
+        <h4 class="pb-3">Timeline</h4>
+        <div class="timeline-item">
+          <div class="item row mx-2">
+            <span class="col-4 fa-stack">
+              <span class="fa-solid fa-circle fa-stack-2x"></span>
+              <strong class="fa-stack-1x"> 01 </strong>
+            </span>
+            <div class="col-8 px-2">
+              <h6>Project Start</h6>
+              <p>Xem bố cục trang Web mẫu và các yêu cầu thực hiện.</p>
+            </div>
+          </div>
+          <div class="item row mx-2">
+            <span class="col-4 fa-stack">
+              <span class="fa-solid fa-circle fa-stack-2x"></span>
+              <strong class="fa-stack-1x"> 02 </strong>
+            </span>
+            <div class="col-8 px-2">
+              <h6>Project Date</h6>
+              <p>Thiết kế layout bằng HTML và ứng dụng Bootstrap 5.0.</p>
+            </div>
+          </div>
+          <div class="item row mx-2">
+            <span class="col-4 fa-stack">
+              <span class="fa-solid fa-circle fa-stack-2x"></span>
+              <strong class="fa-stack-1x"> 03 </strong>
+            </span>
+            <div class="col-8 px-2">
+              <h6>Project Date</h6>
+              <p>Sử dụng CSS để thiết kế lại layout theo đúng yêu cầu bài.</p>
+            </div>
+          </div>
+          <div class="item row mx-2">
+            <span class="col-4 fa-stack">
+              <span class="fa-solid fa-circle fa-stack-2x"></span>
+              <strong class="fa-stack-1x"> 04 </strong>
+            </span>
+            <div class="col-8 px-2">
+              <h6>Project Date</h6>
+              <p>
+                Dùng media query để thiết lập các giao diện màn hình khác nhau.
+              </p>
+            </div>
+          </div>
+          <div class="item row mx-2">
+            <span class="col-4 fa-stack">
+              <span class="fa-solid fa-circle fa-stack-2x"></span>
+              <strong class="fa-stack-1x"> 05 </strong>
+            </span>
+            <div class="col-8 px-2">
+              <h6>Project Date</h6>
+              <p>Upload nội dung trang Web lên Github.</p>
+            </div>
+          </div>
+          <div class="item row mx-2">
+            <span class="col-4 fa-stack">
+              <span class="fa-solid fa-circle fa-stack-2x"></span>
+              <strong class="fa-stack-1x"> 06 </strong>
+            </span>
+            <div class="col-8 px-2">
+              <h6>Project Date</h6>
+              <p>Chạy thử</p>
+            </div>
+          </div>
+          <div class="item row mx-2">
+            <span class="col-4 fa-stack">
+              <span class="fa-solid fa-circle fa-stack-2x"></span>
+              <strong class="fa-stack-1x"> 07 </strong>
+            </span>
+            <div class="col-8 px-2">
+              <h6>Project Date</h6>
+              <p>
+                Kiểm tra sửa lại lỗi link CSS để trang Web hiển thị đúng yêu
+                cầu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col p-3" id="scopes">
+        <h4 class="pb-3">Scopes</h4>
+        <div class="scopes-details d-flex">
+          <div class="in px-3">
+            <h6 class="fw-bold p-2 mb-2">IN</h6>
+            <p class="mb-3">
+              - Funix: bài Assignment 03 của lớp WEB101x_2.1-A_VN - Xây dựng
+              website đầu tiên.
+            </p>
+            <p class="mb-3">
+              - Github: nơi lưu trữ dữ liệu Web và hosting để Web chạy.
+            </p>
+          </div>
+          <div class="out px-3">
+            <h6 class="fw-bold p-2 mb-2">Out</h6>
+            <p class="mb-3">
+              - Funix: học viên hoàn thành bài Assignment tốt cũng là cách kiểm
+              chứng chất lượng đào tạo của trường.
+            </p>
+            <p class="mb-3">
+              - Tôi: hoàn thành trang Web đầu tiên với nôi dung là Digital - CV
+              giúp cho chặng đường ứng tuyển việc làm sau này.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col p-3" id="primary">
+        <h4 class="pb-3">Primary</h4>
+        <div class="primary-item d-flex">
+          <i class="fa-solid fa-circle-question px-2 mb-3"></i>
+          <p>
+            Thiết kế layout Website bằng HTML, CSS và có ứng dụng thêm Bootstrap
+            5.0.
+          </p>
+        </div>
+        <div class="primary-item d-flex">
+          <i class="fa-solid fa-circle-question px-2 mb-3"></i>
+          <p>Đưa được Website lên mạng thành công.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

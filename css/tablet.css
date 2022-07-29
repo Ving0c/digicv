@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+  /* .avatar {
+    display: none;
+  } */
+
+  .edit-col {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  /* Hoạt động - Kỹ năng */
+
+  #active-skill {
+    width: 100%;
+  }
+
+  /* Chứng chỉ giải thưởng */
+  .border-right {
+    border-right: 1.5px solid #d6c08d;
+  }
+
+  .border-bottom {
+    border-bottom: 1.5px solid #d6c08d;
+  }
+  .certificate-details h6 {
+    padding-top: 1rem;
+    margin: 0px;
+  }
+  .certificate-details ul {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* Dự án */
+  .project-img {
+    object-fit: cover;
+  }
+  /* Footer */
+  #footer i {
+    font-size: 200%;
+  }
+}
